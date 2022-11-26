@@ -1,0 +1,97 @@
+@use './colors' as c;
+@use './fonts' as f;
+
+.button {
+	width: 100%;
+	text-align: center;
+	padding: 2rem 1.6rem;
+	margin: 0 auto;
+}
+
+.btn {
+	font-family: Poppins;
+	font-size: 1.8rem;
+	padding: 2rem;
+	border-radius: 8px;
+	width: 100%;
+	cursor: pointer;
+}
+
+.footer {
+	font-size: 2.4rem;
+}
+
+.main {
+	width: 100%;
+	text-align: center;
+	padding: 2rem 1.6rem;
+	position: absolute;
+
+	.primary-btn {
+		display: inline;
+		padding: 2rem 10rem;
+		font-size: 2.4rem;
+	}
+}
+
+.primary-btn {
+	background-color: c.$brown;
+	color: c.$almost-black;
+	display: block;
+	transition: 0.3s;
+	border: none;
+}
+
+.primary-btn:hover {
+	background-color: c.$brown-hover;
+	transition: 0.3s;
+}
+
+.secondary-btn {
+	background-color: transparent;
+	border: 1px solid #906B47;
+	color:#906B47;
+	display: block;
+	transition: 0.3s;
+	background: none;
+}
+
+.secondary-btn:hover {
+	background-color: c.$brown;
+	color: c.$almost-black;
+	transition: 0.3s;
+}
+
+.facebook-btn {
+	background-color: c.$almost-black;
+	color: c.$off-white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	gap: 2rem;
+	transition: 0.3s;
+
+	svg {
+		width: 2rem;
+	}
+
+	svg path {
+		fill: c.$off-white;
+	}
+
+	p {
+		font-size: 1.8rem;
+	}
+}
+
+.facebook-btn:hover {
+	background-color: rgb(20, 20, 20);
+	transition: 0.3s;
+}
+
+@media only screen and (min-width: 768px) {
+	.button {
+		max-width: 40rem;
+	}
+}

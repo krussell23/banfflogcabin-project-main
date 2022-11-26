@@ -1,0 +1,6 @@
+{
+	"short_name": "Banff Log Cabin",
+	"name": "Banff Log Cabin",
+	"start_url": ".",
+	"display": "standalone"
+}

@@ -1,0 +1,132 @@
+@use '../assets' as a;
+
+.site-footer {
+	background-color: a.$green;
+	text-align: center;
+	padding-top: 1.6rem;
+
+	.footer-padding {
+		margin: 0 auto;
+
+		.li {
+			width: 100%;
+		}
+	}
+
+	.h1-style {
+		line-height: 8rem;
+		font-size: 5.2rem;
+		padding-top: 2rem;
+	}
+
+	p {
+		color: a.$off-white;
+		line-height: 3.2rem;
+	}
+
+	.li {
+		margin-bottom: 1rem;
+	}
+
+	.location,
+	.contact {
+		padding-top: 4rem;
+	}
+
+	.contact {
+		padding-bottom: 4rem;
+	}
+
+	.location p:first-of-type,
+	.contact p:first-of-type {
+		border-bottom: 1px solid a.$off-white;
+		max-width: 14rem;
+		margin: 0 auto 1.6rem auto;
+	}
+
+	.location,
+	.contact {
+		margin-bottom: 3rem;
+
+		a {
+			color: a.$off-white;
+		}
+	}
+
+	.copyright {
+		padding-top: 6rem;
+	}
+
+	@media only screen and (min-width: 1020px) {
+		.footer-padding {
+			margin: 0 auto;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+
+			.location p:first-of-type,
+			.contact p:first-of-type {
+				margin: 0 0 1.6rem 0;
+			}
+
+			.contact {
+				padding-bottom: 0;
+			}
+
+			.button {
+				margin: 0 auto;
+			}
+
+			p {
+				font-size: 1.8rem;
+			}
+
+			.h1-style {
+				font-size: 4rem;
+			}
+
+			.book {
+				order: 2;
+			}
+
+			.h1-style {
+				order: 1;
+				width: 100rem;
+			}
+
+			.admin {
+				order: 3;
+				display: flex;
+				flex-direction: column;
+
+				.admin-link {
+					margin-top: 9rem;
+				}
+
+				.button {
+					min-width: 40rem;
+				}
+			}
+		}
+
+		.loc-cont,
+		.h1-style {
+			text-align: left;
+			width: 30%;
+		}
+
+		.copyright {
+			padding-top: 2rem;
+		}
+	}
+
+	@media only screen and (min-width: 2000px) {
+		.footer-padding {
+			width: 150rem;
+		}
+
+		.loc-cont {
+			min-width: 40rem;
+		}
+	}
+}

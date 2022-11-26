@@ -1,0 +1,279 @@
+@use '../assets' as a;
+
+.home-page {
+	.heading1 {
+		background-color: a.$green;
+		padding: 4rem 1.6rem;
+		text-align: center;
+		margin-top: -0.5rem;
+		color: a.$off-white;
+	}
+
+	.container.top-content {
+		padding-bottom: 8rem;
+		max-width: 110rem;
+
+		.heading2 {
+			padding: 6rem 0 1rem 0;
+		}
+	}
+
+	.trip_advisor{
+		margin-bottom: 2rem;
+	}
+
+	.ourcabin-ban,
+	.ammenities-ban {
+		background-color: a.$almost-black;
+		padding: 2rem 0 2rem 1.6rem;
+		color: a.$off-white;
+		// line-height: auto;
+
+		.heading2 {
+			max-width: 70rem;
+			margin: 0 auto;
+		}
+	}
+
+	.cabin-content {
+		background-color: a.$green;
+		color: a.$off-white;
+		padding-bottom: 4rem;
+
+		.content {
+			padding: 4rem 1.6rem;
+			max-width: 70rem;
+		}
+	}
+
+	.cabin2 {
+		background-image: url('../../img/bedroom1.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+
+		width: 100%;
+		height: 30rem;
+	}
+
+	.elk {
+		background-image: url('../../img/ammenities-elk.jpg');
+		width: 100%;
+		height: 30rem;
+
+		background-position: center;
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+
+	.ammenities {
+		color: a.$off-white;
+		background-color: a.$green;
+
+		.list {
+			padding: 4rem 1.6rem 0 1.6rem;
+			max-width: 80rem;
+			margin: 0 auto;
+
+			.div1,
+			.div2 {
+				div {
+					display: flex;
+					flex-direction: row;
+					flex-wrap: nowrap;
+					margin-bottom: 3rem;
+					align-items: center;
+				}
+
+				svg {
+					fill: a.$off-white;
+					width: 5rem;
+				}
+
+				p {
+					margin-left: 4rem;
+				}
+			}
+
+			.elk {
+				margin-top: 8rem;
+			}
+		}
+
+		.reviews {
+			background-color: a.$grey;
+		}
+	}
+
+
+	.awards-bg {
+		background-color: a.$almost-black;
+
+
+		.awards {
+			padding: 1rem 0;
+
+			img {
+				width: 18rem;
+				margin: 3rem auto;
+			}
+		}
+	}
+
+
+	@media screen and (min-width: 768px) {
+		.heading1 {
+			padding: 10rem 0;
+			font-size: 8rem;
+		}
+
+		.list {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: space-around;
+
+			.div1,
+			.div2 {
+				margin: 2rem;
+
+				display: flex;
+				flex-direction: column;
+
+				p {
+					margin: 0;
+					margin-top: 1rem;
+					margin-left: 2rem;
+				}
+
+				div {
+					margin: 0;
+					margin-bottom: 2rem;
+				}
+			}
+		}
+	}
+
+	@media screen and (min-width: 1000px) {
+
+		.spacer-home {
+			margin-top: 12rem;
+		}
+
+		.heading1 {
+			font-size: 10rem;
+		}
+
+		.container.top-content {
+			margin-bottom: 4rem;
+
+			.heading2 {
+				margin-top: 4rem;
+			}
+		}
+
+		.desktop {
+			// width: 101rem;
+			margin: 0 auto;
+		}
+
+		.cabin-flex {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+
+			.cabin1 {
+				width: 50%;
+
+				.cabin-content {
+					height: 100%;
+				}
+			}
+
+			.cabin2 {
+				width: 50%;
+				height: 67.8rem;
+				background-size: 102rem;
+			}
+		}
+
+		.ammenities {
+			.title {
+				margin-bottom: 0rem;
+			}
+
+			padding-bottom: 0;
+		}
+
+		.flex {
+			display: flex;
+			flex-direction: row-reverse;
+			flex-wrap: nowrap;
+
+			.flex-content {
+				width: 50%;
+			}
+
+			.elk {
+				height: 70.5rem;
+				width: 50%;
+				background-size: 80rem;
+			}
+
+			.list {
+
+				.div1,
+				.div2 {
+					margin: 0;
+
+					div {
+						margin-bottom: 2rem;
+
+						p {
+							margin-left: 3rem;
+						}
+					}
+				}
+			}
+		}
+
+		.awards-bg {
+			.awards {
+				max-width: 150rem;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-around;
+				padding: 4rem 0;
+
+				img {
+					width: 20rem;
+					height: fit-content;
+					margin: auto;
+				}
+
+
+			}
+		}
+
+
+	}
+
+	@media screen and (min-width: 1400px) {
+		.banner-img {
+			margin: 0 auto;
+			width: fit-content;
+		}
+
+		.desktop {
+			max-width: 150rem;
+		}
+
+		.flex .elk {
+			background-size: 101rem;
+		}
+	}
+}
+
+.h2-back {
+	background-color: a.$almost-black;
+	padding: 2rem 0 2rem 1.6rem;
+}
