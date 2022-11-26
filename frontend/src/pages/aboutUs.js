@@ -2,7 +2,6 @@ import React from 'react';
 import useFetch from '../hooks/useFetch';
 import History from '../components/history/History';
 import '../scss/pages/_aboutus.scss';
-
 import aboutmedium from '.././img/about-medium.jpg';
 import aboutmobile from '.././img/about-mobile.jpg';
 import hostdesktop from '.././img/host-desktop.jpg';
